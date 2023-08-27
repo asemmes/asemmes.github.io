@@ -23,6 +23,15 @@
             border-right: 10px solid transparent;
             border-top: 10px solid black;
         }
+        .decision-branch {
+            display: flex;
+            align-items: center;
+        }
+        .branch-arrow {
+            height: 50px;
+            border-left: 1px solid black;
+            margin: 0 20px;
+        }
     </style>
 </head>
 <body>
@@ -32,9 +41,21 @@
         <div class="box">Process 1</div>
         <div class="arrow"></div>
         <div class="box">Decision</div>
-        <div class="arrow"></div>
-        <div class="box">Process 2</div>
-        <div class="arrow"></div>
+        <div class="decision-branch">
+            <div>
+                <div class="arrow"></div>
+                <div class="box">Yes</div>
+                <div class="arrow"></div>
+                <div class="box">Process 2</div>
+                <div class="arrow"></div>
+            </div>
+            <div class="branch-arrow"></div>
+            <div>
+                <div class="arrow"></div>
+                <div class="box">No</div>
+                <div class="arrow"></div>
+            </div>
+        </div>
         <div class="box">End</div>
     </div>
 </body>
