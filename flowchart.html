@@ -7,30 +7,29 @@
     <style>
         .flowchart {
             display: flex;
-            flex-direction: column;
             align-items: center;
         }
         .box {
             border: 1px solid black;
             padding: 10px 20px;
-            margin: 10px 0;
+            margin: 10px;
             background-color: #f4f4f4;
         }
         .arrow {
-            width: 0;
+            width: 30px;
             height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-top: 10px solid black;
+            border-top: 1px solid black;
+            margin: 0 10px;
         }
         .decision-branch {
             display: flex;
+            flex-direction: column;
             align-items: center;
         }
         .branch-arrow {
-            height: 50px;
-            border-left: 1px solid black;
-            margin: 0 20px;
+            width: 50px;
+            border-top: 1px solid black;
+            margin: 0 10px;
         }
     </style>
 </head>
@@ -53,9 +52,9 @@
             <div>
                 <div class="arrow"></div>
                 <div class="box">No</div>
-                <div class="arrow"></div>
             </div>
         </div>
+        <div class="arrow"></div>
         <div class="box">End</div>
     </div>
 </body>
